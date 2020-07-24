@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="350" viewBox="0 0 250 350" >
+	<style type="text/css" >
+		<![CDATA[
+			svg { paint-order: stroke fill; stroke-linejoin: round; }
+
+			#main_frame { fill: #FFFFFF; stroke: #000000; stroke-width: 3px; }
+
+			.white_text { fill: #FFFFFFFF; stroke: #00000080; stroke-width: 1px; }
+			.black_text { fill: #000000FF; stroke: #FFFFFF80; stroke-width: 1px; }
+			
+			.back_line     { stroke: #DDDDDD; stroke-width: 4px; stroke-linecap: round; }
+			.line_label    { font-size: 12px; font-family: Grenze; font-weight: 600; text-anchor: begin; }
+			.line_value    { font-size: 10px; font-family: Exo;    font-weight: 800; text-anchor: end; }
+			
+			.stat_label      { font-size: 10px; font-family: Grenze; font-weight: 600; text-anchor: middle; alignment-baseline: middle; }
+			.stat_value      { font-size: 14px; font-family: Exo;    font-weight: 800; text-anchor: middle; alignment-baseline: middle; }
+			.stat_label_back { stroke: #000000; stroke-width: 2px; fill: #000000; }
+			.stat_value_back { stroke: #000000; stroke-width: 2px; fill: #FFFFFF; }
+			
+			.section_title { font-size: 16px; font-family: Grenze; font-weight: 600; text-anchor: start; }
+			.section_text  { font-size: 12px; font-family: Grenze; font-weight: 400; text-align:  justify; line-height: 12px; }
+
+			#main_title    { font-size: 24px; font-family: Grenze; font-weight: 600; text-anchor: middle; stroke: #000000; stroke-width: 4px; }
+			#footer_left   { font-size: 11px; font-family: Exo;    font-weight: 600; text-anchor: start;  stroke: #000000; stroke-width: 3px; }
+			#footer_right  { font-size: 11px; font-family: Exo;    font-weight: 600; text-anchor: end;    stroke: #000000; stroke-width: 3px; }
+		]]>
+    </style>
+	<g>
+		<rect fill="#000000" stroke="#000000" width="250" height="350" x="0" y="0" />
+		<rect fill="#444444" width="234" height="334" x="8" y="8" rx="8" ry="8" />
+	</g>
+	<g>
+		<text id="main_title" class="white_text" x="125" y="28">{card_title}</text>
+		<text id="footer_left" class="white_text" x="20" y="336">{card_type}</text>
+		<text id="footer_right" class="white_text" x="230" y="336">{page_number}</text>
+	</g>
+	<g transform="translate(16 36)">
+		<rect id="main_frame" width="218" height="286" x="0" y="0" rx="5" ry="5" />
+		<g transform="translate(5 8)">
+			<line class="back_line" x1="3" y1="14" x2="205" y2="14" />
+			<g transform="translate(3 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{brawn_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >B</text>
+			</g>
+			<g transform="translate(37 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{agility_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >A</text>
+			</g>
+			<g transform="translate(71 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{intellect_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >I</text>
+			</g>
+			<g transform="translate(105 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{cunning_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >C</text>
+			</g>
+			<g transform="translate(140 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{willpower_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >W</text>
+			</g>
+			<g transform="translate(174 0)">
+				<circle class="stat_value_back" cx="18" cy="10" r="10" /><text x="18" y="11" class="black_text stat_value" >{presence_value}</text>
+				<circle class="stat_label_back" cx="5"  cy="5"  r="5"  /><text x="5" y="5.5" class="white_text stat_label" >P</text>
+			</g>
+		</g>
+		<g transform="translate(8 30)">
+			<g transform="translate(0 0)">
+				<line class="back_line" x1="0" y1="11" x2="60" y2="11" />
+				<text class="black_text line_label" x="3"  y="14.5">WT</text>
+				<text class="black_text line_value" x="57" y="14.5">{starting_wounds}</text>
+			</g>
+			<g transform="translate(71 0)">
+				<line class="back_line" x1="0" y1="11" x2="60" y2="11" />
+				<text class="black_text line_label" x="3"  y="14.5">ST</text>
+				<text class="black_text line_value" x="57" y="14.5">{starting_strain}</text>
+			</g>
+			<g transform="translate(142 0)">
+				<line class="back_line" x1="0" y1="11" x2="60" y2="11" />
+				<text class="black_text line_label" x="3"  y="14.5">XP</text>
+				<text class="black_text line_value" x="57" y="14.5">{starting_xp}</text>
+			</g>
+		</g>
+		<g transform="translate(8 53)">
+			<line class="back_line" x1="0" y1="11" x2="202" y2="11" />
+			<text id="starting_skills_title" class="black_text section_title" x="2" y="14.5">Starting Skills</text>
+			<foreignObject x="0" y="18" width="200" height="90">
+			   <div class="section_text" xmlns="http://www.w3.org/1999/xhtml">
+					{starting_skills}
+			   </div>
+			</foreignObject>
+		</g>
+		<g transform="translate(8 {ability_one_offset})">
+			<line class="back_line" x1="0" y1="11" x2="202" y2="11" />
+			<text id="ability_one_title" class="black_text section_title" x="2" y="14.5">{ability_one_title}</text>
+			<foreignObject x="0" y="18" width="200" height="90">
+			   <div class="section_text" xmlns="http://www.w3.org/1999/xhtml">
+					{ability_one_description}
+			   </div>
+			</foreignObject>
+		</g>
+		<g transform="translate(8 {ability_two_offset})">
+			<line class="back_line" x1="0" y1="11" x2="202" y2="11" />
+			<text id="ability_two_title" class="black_text section_title" x="2" y="14.5">{ability_two_title}</text>
+			<foreignObject x="0" y="18" width="200" height="90">
+			   <div class="section_text" xmlns="http://www.w3.org/1999/xhtml">
+					{ability_two_description}
+			   </div>
+			</foreignObject>
+		</g>
+		<g transform="translate(8 {ability_three_offset})">
+			<line class="back_line" x1="0" y1="11" x2="202" y2="11" />
+			<text id="ability_thre_title" class="black_text section_title" x="2" y="14.5">{ability_two_title}</text>
+			<foreignObject x="0" y="18" width="200" height="90">
+			   <div class="section_text" xmlns="http://www.w3.org/1999/xhtml">
+					{ability_three_description}
+			   </div>
+			</foreignObject>
+		</g>
+	</g>
+</svg>

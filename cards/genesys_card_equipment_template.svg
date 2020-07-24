@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="350" viewBox="0 0 250 350" >
+	<style type="text/css" >
+		<![CDATA[
+			svg { paint-order: stroke fill; stroke-linejoin: round; }
+
+			#image_frame { fill: #00000000; stroke: #000000AA; stroke-width: 3px; }
+			#main_frame {  fill: #DDDDDDFF; stroke: #000000AA; stroke-width: 3px; paint-order: fill stroke;}
+
+			.white_text { fill: #FFFFFFFF; stroke: #00000080; stroke-width: 1px; }
+			.black_text { fill: #000000FF; stroke: #FFFFFF80; stroke-width: 1px; }
+			
+			.back_line     { stroke: #00000044; stroke-width: 2px; stroke-linecap: round; }
+			
+			.line_label    { font-size: 16px; font-family: Grenze;      font-weight: 600; text-anchor: start; alignment-baseline: middle; }
+			.line_number   { font-size: 14px; font-family: Inconsolata; font-weight: 600; text-anchor: end;   alignment-baseline: middle; }
+			.line_string   { font-size: 14px; font-family: Grenze;      font-weight: 400; text-anchor: end;   alignment-baseline: middle; }
+			
+			.section_title { font-size: 16px; font-family: Grenze; font-weight: 600; text-anchor: start; }
+			.section_text  { font-size: 14px; font-family: Grenze; font-weight: 400; text-align: justify; line-height: 12px; }
+
+			#main_title    { font-size: 24px; font-family: Grenze; font-weight: 600; text-anchor: middle; stroke: #000000; stroke-width: 4px; }
+			#footer_left   { font-size: 11px; font-family: Exo;    font-weight: 600; text-anchor: start;  stroke: #000000; stroke-width: 3px; }
+			#footer_right  { font-size: 11px; font-family: Exo;    font-weight: 600; text-anchor: end;    stroke: #000000; stroke-width: 3px; }
+		]]>
+    </style>
+	<g>
+		<rect fill="#000000" stroke="#000000" width="250" height="350" x="0" y="0" />
+		<rect fill="#888888" width="234" height="334" x="8" y="8" rx="8" ry="8" />
+	</g>
+	<g transform="translate(10 12)">
+		<line class="back_line" x1="20" y1= "6" x2="210" y2= "6"/>
+		<line class="back_line" x1="15" y1="10" x2="215" y2="10"/>
+		<line class="back_line" x1="20" y1="14" x2="210" y2="14"/>
+		<text id="main_title" class="white_text" x="115" y="16">Sword</text>
+	</g>
+	<g>
+		<text id="footer_left" class="white_text" x="20" y="335">Weapon</text>
+		<text id="footer_right" class="white_text" x="230" y="335">CRB 144</text>
+	</g>
+	<g transform="translate(16 38)">
+		<mask id="illustration_mask"><rect width="218" height="122" x="0" y="0" rx="5" ry="5" fill="#FFFFFF"/></mask>
+		<image href="images/stolen_sword_image.jpg" x="-4" y="-2" width="226" height="126" mask="url(#illustration_mask)"/>
+		<rect id="image_frame" width="217" height="122" x="0.5" y="0" rx="5" ry="5" />
+	</g>
+	<g transform="translate(16 170)">
+		<rect id="main_frame" width="218" height="150" x="0" y="0" rx="5" ry="5" />
+		<g transform="translate(8 4)">
+			<g transform="translate(0 0)">
+				<line class="back_line" x1="0" y1="16" x2="131" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Skill</text>
+				<text class="black_text line_string" x="128" y="12">Melee (Light)</text>
+			</g>
+			<g transform="translate(0 16)">
+				<line class="back_line" x1="0" y1="16" x2="131" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Range</text>
+				<text class="black_text line_string" x="128" y="12">Engaged</text>
+			</g>
+
+			
+			<g transform="translate(142 0)">
+				<line class="back_line" x1="0" y1="16" x2="60" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Dmg</text>
+				<text class="black_text line_number" x="58" y="12">+3</text>
+			</g>
+			<g transform="translate(142 16)">
+				<line class="back_line" x1="0" y1="16" x2="60" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Crit</text>
+				<text class="black_text line_number" x="58" y="12">2</text>
+			</g>
+
+			<g transform="translate(0 32)">
+				<line class="back_line" x1="0" y1="16" x2="201" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Special</text>
+				<text class="black_text line_string" x="200" y="12">Defensive (1)</text>
+			</g>
+			<g transform="translate(0 48)">
+				<line class="back_line" x1="0" y1="16" x2="201" y2="16" />
+				<text class="black_text line_string" x="200" y="12"></text>
+			</g>
+
+			<g transform="translate(142 104)">
+				<line class="back_line" x1="0" y1="16" x2="60" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Enc</text>
+				<text class="black_text line_number" x="58" y="12">1</text>
+			</g>
+			<g transform="translate(0 120)">
+				<line class="back_line" x1="0" y1="16" x2="131" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Price</text>
+				<text class="black_text line_number" x="128" y="12">200</text>
+			</g>
+			<g transform="translate(142 120)">
+				<line class="back_line" x1="0" y1="16" x2="60" y2="16" />
+				<text class="black_text line_label" x="2"  y="12">Rarity</text>
+				<text class="black_text line_number" x="58" y="12">2</text>
+			</g>
+		</g>
+	</g>
+</svg>

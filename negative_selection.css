@@ -1,0 +1,51 @@
+body {
+	font-family: Grenze;
+}
+
+div,p{
+		box-sizing: border-box;
+}
+
+#main_container{
+	margin-left: auto; margin-right:auto;
+	width: 600px;
+	border: black 2px solid;
+	padding: 0;
+}
+
+h1,h2 {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	background-color: black;
+}
+
+h1{
+	height: 28px;
+	line-height: 28px;
+	font-size: 24px;
+	padding: 0px 5px 5px 5px;
+	
+}
+
+h2{
+	font-size: 16px;
+	padding: 0px 5px 1px 5px;
+}
+
+p {
+	margin: 3px 0px;
+	padding: 5px;
+	text-indent: 5px;
+	width: 360px;
+	font-size: 16px;
+	line-height: 18px;
+	border-right: 1px solid gray;
+	text-align: justify;
+}
+
+.illustration{
+	width: 230px;
+	margin: 0px 4px;
+	float: right;
+}
