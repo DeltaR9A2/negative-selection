@@ -3,14 +3,14 @@ body {
 }
 
 div,p{
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 #main_container{
-	margin-left: auto; margin-right:auto;
 	width: 600px;
-	border: black 2px solid;
 	padding: 0;
+	border: black 2px solid;
+	margin-left: auto; margin-right:auto;
 }
 
 h1,h2 {
@@ -34,18 +34,19 @@ h2{
 }
 
 p {
-	margin: 3px 0px;
-	padding: 5px;
-	text-indent: 5px;
-	width: 360px;
 	font-size: 16px;
+	padding: 5px;
+	margin: 3px 0px;
+	text-indent: 10px;
+	width: 360px;
 	line-height: 18px;
-	border-right: 1px solid gray;
+	border-right: 2px solid #DDDDDD;
 	text-align: justify;
 }
 
 .illustration{
-	width: 230px;
-	margin: 0px 4px;
+	width: 200px;
+	margin: 0px 22px;
 	float: right;
+	image-rendering:pixelated;
 }
