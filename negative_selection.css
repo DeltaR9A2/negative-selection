@@ -45,8 +45,7 @@ p {
 }
 
 .illustration{
-	width: 200px;
-	margin: 0px 22px;
+	width: 230px;
+	margin: 0px 5px;
 	float: right;
-	image-rendering:pixelated;
-}
+	}
