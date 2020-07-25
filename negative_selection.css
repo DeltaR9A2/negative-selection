@@ -7,7 +7,7 @@ div,p{
 }
 
 #main_container{
-	width: 600px;
+	width: 800px;
 	padding: 0;
 	border: black 2px solid;
 	margin-left: auto; margin-right:auto;
@@ -35,17 +35,17 @@ h2{
 
 p {
 	font-size: 16px;
-	padding: 5px;
-	margin: 3px 0px;
+	padding: 10px;
+	margin: 0px;
 	text-indent: 10px;
-	width: 360px;
+	width: 500px;
 	line-height: 18px;
 	border-right: 2px solid #DDDDDD;
 	text-align: justify;
 }
 
 .illustration{
-	width: 230px;
-	margin: 0px 5px;
+	width: 272px;
+	margin: 12px 12px;
 	float: right;
 	}
