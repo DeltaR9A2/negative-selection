@@ -8,8 +8,8 @@ div,p{
 
 #main_container{
 	width: 800px;
-	padding: 0;
-	border: black 2px solid;
+	padding: 0px;
+	border: black 3px solid;
 	margin-left: auto; margin-right:auto;
 }
 
@@ -21,23 +21,23 @@ h1,h2 {
 }
 
 h1{
-	height: 28px;
-	line-height: 28px;
-	font-size: 24px;
-	padding: 0px 5px 5px 5px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 32px;
+	padding: 2px 5px 8px 10px;
 	
 }
 
 h2{
-	font-size: 16px;
-	padding: 0px 5px 1px 5px;
+	font-size: 20px;
+	padding: 0px 8px 1px 10px;
 }
 
 p {
-	font-size: 16px;
-	padding: 10px;
+	font-size: 18px;
+	padding: 10px 30px 15px 15px;
 	margin: 0px;
-	text-indent: 10px;
+	text-indent: 20px;
 	width: 500px;
 	line-height: 18px;
 	border-right: 2px solid #DDDDDD;
@@ -45,7 +45,8 @@ p {
 }
 
 .illustration{
-	width: 272px;
-	margin: 12px 12px;
+	max-width: 250px;
+	max-height: 400px;
+	margin: 10px 20px;
 	float: right;
-	}
+}
