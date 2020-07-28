@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="350" viewBox="0 0 250 350" >
+	<style type="text/css" >
+		<![CDATA[
+			svg { paint-order: stroke fill; stroke-linejoin: round; }
+
+			#image_frame { fill: #00000000; stroke: #000000AA; stroke-width: 3px; }
+			#main_frame {  fill: #DDDDDDFF; stroke: #000000AA; stroke-width: 3px; paint-order: fill stroke;}
+
+			.white_text { fill: #FFFFFFFF; stroke: #00000080; stroke-width: 1px; }
+			.black_text { fill: #000000FF; stroke: #FFFFFF80; stroke-width: 1px; }
+			
+			.back_line     { stroke: #00000099; stroke-width: 3px; stroke-linecap: round; }
+			.back_line_inner     { stroke: #FFFFFF66; stroke-width: 1.5px; stroke-linecap: round; }
+			.back_line_wide     { stroke: #00000044; stroke-width: 15px; stroke-linecap: round; }			
+			
+			.line_label    { font-size: 16px; font-family: Grenze;      font-weight: 600; text-anchor: start; alignment-baseline: middle; }
+			.line_number   { font-size: 14px; font-family: Inconsolata; font-weight: 600; text-anchor: end;   alignment-baseline: middle; }
+			.line_string   { font-size: 14px; font-family: Grenze;      font-weight: 400; text-anchor: end;   alignment-baseline: middle; }
+			
+			.section_title { font-size: 16px; font-family: Grenze; font-weight: 600; text-anchor: start; }
+			.section_text  { font-size: 14px; font-family: Grenze; font-weight: 400; text-align: justify; line-height: 12px; }
+
+			#main_title    { font-size: 24px; font-family: Grenze; font-weight: 600; text-anchor: middle; stroke: #000000; stroke-width: 4px; }
+			#footer_left   { font-size: 10px; font-family: Grenze; font-weight: 400; text-anchor: start;  stroke: #000000; stroke-width: 3px; }
+			#footer_right  { font-size: 10px; font-family: Grenze; font-weight: 400; text-anchor: end;    stroke: #000000; stroke-width: 3px; }
+			#footer_center { font-size: 10px; font-family: Grenze; font-weight: 400; text-anchor: middle;    stroke: #000000; stroke-width: 3px; }
+		]]>
+    </style>
+	<g>
+		<rect fill="#000000" stroke="#000000" width="250" height="350" x="0" y="0" />
+		<rect fill="#888888" width="234" height="334" x="8" y="8" rx="8" ry="8" />
+	</g>
+	<g transform="translate(16 26)">
+		<mask id="illustration_mask"><rect x="0" y="0" width="218" height="300" rx="5" ry="5" fill="#FFFFFF"/></mask>
+		<image href="../../images/ns_inquisitor_001.png"         x="0" y="0" width="218" height="300" mask="url(#illustration_mask)" preserveAspectRatio="xMidYMid slice"/>
+		<rect id="image_frame"             x="0" y="0" width="218" height="300" rx="5" ry="5" />
+	</g>
+	<g transform="translate(10 12)">
+
+		<text id="main_title" class="white_text" x="115" y="16">Inquisitor</text>
+	</g>
+	<g transform="translate(10 338)">
+		<text id="footer_left" class="white_text" x="14" y="0">🖌 Marko Djurdjevic</text>
+		<text id="footer_right" class="white_text" x="216" y="0">Unlicensed ⚠</text>
+	</g>
+	</svg>

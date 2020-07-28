@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="250" height="350" viewBox="0 0 250 350" >
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="250" viewBox="0 0 350 250" >
 	<style type="text/css" >
 		<![CDATA[
 			svg { paint-order: stroke fill; stroke-linejoin: round; }
@@ -27,21 +27,19 @@
 		]]>
     </style>
 	<g>
-		<rect fill="#000000" stroke="#000000" width="250" height="350" x="0" y="0" />
-		<rect fill="#888888" width="234" height="334" x="8" y="8" rx="8" ry="8" />
+		<rect fill="#000000" stroke="#000000" width="350" height="250" x="0" y="0" />
+		<rect fill="#888888" width="334" height="234" x="8" y="8" rx="8" ry="8" />
 	</g>
-	<g transform="translate(16 25)">
-		<mask id="illustration_mask"><rect          x="0" y="0" width="218" height="310" rx="5" ry="5" fill="#FFFFFF"/></mask>
-		<image href="images/basic_observer_bot_adjusted.png" x="0" y="0" width="218" height="310" mask="url(#illustration_mask)" preserveAspectRatio="xMidYMid slice"/>
-		<rect id="image_frame"                      x="0" y="0" width="218" height="310" rx="5" ry="5" />
+	<g transform="translate(16 26)">
+		<mask id="illustration_mask"><rect             x="0" y="0" width="318" height="198" rx="5" ry="5" fill="#FFFFFF"/></mask>
+		<image href="{{image_fn}}" x="0" y="0" width="318" height="198" mask="url(#illustration_mask)" preserveAspectRatio="xMidYMid slice"/>
+		<rect id="image_frame"                         x="0" y="0" width="318" height="198" rx="5" ry="5" />
 	</g>
-	<g transform="translate(10 12)">
-
-		<text id="main_title" class="white_text" x="115" y="16">Observer</text>
+	<g transform="translate(175 28)">
+		<text id="main_title" class="white_text" x="0" y="0">{{title}}</text>
 	</g>
-	<g transform="translate(10 327)">
-		<text id="footer_left" class="white_text" x="12" y="2">🖌 Sam Brown</text>
-		<!--text id="footer_left" class="white_text" x="12" y="2">🖌 Elena Chervonyuk</text-->
-		<text id="footer_right" class="white_text" x="218" y="2">Unlicensed ⚠</text>
+	<g transform="translate(10 235)">
+		<text id="footer_left" class="white_text" x="12" y="2">🖌 {{illustrator}}</text>
+		<text id="footer_right" class="white_text" x="318" y="2">Unlicensed ⚠</text>
 	</g>
 	</svg>
